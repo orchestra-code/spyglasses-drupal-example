@@ -1,0 +1,49 @@
+{
+  "name": "spyglasses/drupal",
+  "description": "Spyglasses AI Traffic Analytics for Drupal - Detect, block and log your website's AI traffic using Drupal's middleware API.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.spyglasses.io",
+  "authors": [
+    {
+      "name": "Orchestra AI, Inc.",
+      "homepage": "https://www.spyglasses.io",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/orchestra-code/spyglasses-drupal/issues",
+    "source": "https://github.com/orchestra-code/spyglasses-drupal",
+    "docs": "https://www.spyglasses.io/docs/platforms/drupal"
+  },
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Drupal\\spyglasses\\": "src/"
+    }
+  },
+  "extra": {
+    "drupal": {
+      "version": "1.0.0",
+      "datestamp": "1725062400",
+      "security-coverage": {
+        "status": "covered",
+        "message": "Covered by Drupal's security advisory policy"
+      }
+    }
+  },
+  "keywords": [
+    "drupal",
+    "ai",
+    "bot",
+    "analytics",
+    "middleware",
+    "detection",
+    "chatgpt",
+    "claude",
+    "perplexity",
+    "crawler"
+  ]
+}

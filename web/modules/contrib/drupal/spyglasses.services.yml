@@ -1,0 +1,14 @@
+services:
+  spyglasses.middleware:
+    class: Drupal\spyglasses\StackMiddleware\SpyglassesMiddleware
+    arguments: ['@config.factory', '@logger.factory', '@cache.default', '@http_client']
+    tags:
+      - { name: http_middleware, priority: 200, responder: true }
+
+  spyglasses.client:
+    class: Drupal\spyglasses\SpyglassesClient
+    arguments: ['@config.factory', '@logger.factory', '@cache.default', '@http_client']
+
+  spyglasses.pattern_sync:
+    class: Drupal\spyglasses\SpyglassesPatternSync
+    arguments: ['@spyglasses.client', '@config.factory', '@logger.factory']

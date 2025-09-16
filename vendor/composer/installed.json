@@ -2305,6 +2305,74 @@
             "install-path": "../sebastian/diff"
         },
         {
+            "name": "spyglasses/drupal",
+            "version": "v1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestra-code/spyglasses-drupal.git",
+                "reference": "346cf5f9849539edb73678f18e99a5758cff861e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestra-code/spyglasses-drupal/zipball/346cf5f9849539edb73678f18e99a5758cff861e",
+                "reference": "346cf5f9849539edb73678f18e99a5758cff861e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "time": "2025-09-15T17:40:25+00:00",
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1725062400",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\spyglasses\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Orchestra AI, Inc.",
+                    "homepage": "https://www.spyglasses.io",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Spyglasses AI Traffic Analytics for Drupal - Detect, block and log your website's AI traffic using Drupal's middleware API.",
+            "homepage": "https://www.spyglasses.io",
+            "keywords": [
+                "ChatGpt",
+                "ai",
+                "analytics",
+                "bot",
+                "claude",
+                "crawler",
+                "detection",
+                "drupal",
+                "middleware",
+                "perplexity"
+            ],
+            "support": {
+                "docs": "https://www.spyglasses.io/docs/platforms/drupal",
+                "issues": "https://github.com/orchestra-code/spyglasses-drupal/issues",
+                "source": "https://github.com/orchestra-code/spyglasses-drupal"
+            },
+            "install-path": "../../web/modules/contrib/drupal"
+        },
+        {
             "name": "symfony/console",
             "version": "v7.3.3",
             "version_normalized": "7.3.3.0",

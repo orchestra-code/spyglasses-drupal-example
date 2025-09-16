@@ -96,6 +96,7 @@ class ComposerStaticInit9d559ab354f63dc7e9a3fc1a03ad7d46
         ),
         'D' => 
         array (
+            'Drupal\\spyglasses\\' => 18,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
             'Drupal\\Composer\\Plugin\\RecipeUnpack\\' => 36,
@@ -297,6 +298,10 @@ class ComposerStaticInit9d559ab354f63dc7e9a3fc1a03ad7d46
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
+        ),
+        'Drupal\\spyglasses\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/modules/contrib/drupal/src',
         ),
         'Drupal\\Core\\' => 
         array (

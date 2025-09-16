@@ -1,0 +1,16 @@
+spyglasses.settings:
+  path: '/admin/config/services/spyglasses'
+  defaults:
+    _form: '\Drupal\spyglasses\Form\SpyglassesSettingsForm'
+    _title: 'Spyglasses Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+spyglasses.patterns_sync:
+  path: '/admin/config/services/spyglasses/sync'
+  defaults:
+    _controller: '\Drupal\spyglasses\Controller\SpyglassesController::syncPatterns'
+    _title: 'Sync Patterns'
+  requirements:
+    _permission: 'administer site configuration'
+    _csrf_token: 'TRUE'

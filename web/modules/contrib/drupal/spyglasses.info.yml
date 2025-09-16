@@ -1,0 +1,22 @@
+name: 'Spyglasses - AI Traffic Analytics'
+type: module
+description: 'Detect, block and log your website''s AI traffic using Drupal''s middleware API.'
+core_version_requirement: ^8 || ^9 || ^10 || ^11
+package: 'Web services'
+version: '1.0.0'
+
+# Dependencies
+dependencies:
+  - drupal:system
+
+# Configuration
+configure: spyglasses.settings
+
+# Recommended modules for enhanced functionality
+suggests:
+  - cache
+  - ban
+
+# Module information
+project: spyglasses
+datestamp: 1725062400

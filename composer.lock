@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d559ab354f63dc7e9a3fc1a03ad7d46",
+    "content-hash": "f97828f384a4a4e554485015d6fc8ddf",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -490,6 +490,11 @@
         {
             "name": "drupal/core",
             "version": "11.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core.git",
+                "reference": "6d684b0407541c61df4e3bd47b33de475d9f0418"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core/zipball/6d684b0407541c61df4e3bd47b33de475d9f0418",
@@ -652,16 +657,16 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core.git",
-                "reference": "6d684b0407541c61df4e3bd47b33de475d9f0418"
-            }
+            "description": "Drupal is an open source content management platform powering millions of websites and applications."
         },
         {
             "name": "drupal/core-composer-scaffold",
             "version": "11.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-composer-scaffold.git",
+                "reference": "891b4615c479e17245c81571c9be0156be4b03f8"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/891b4615c479e17245c81571c9be0156be4b03f8",
@@ -697,16 +702,16 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ],
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "891b4615c479e17245c81571c9be0156be4b03f8"
-            }
+            ]
         },
         {
             "name": "drupal/core-project-message",
             "version": "11.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-project-message.git",
+                "reference": "656efa00f296415ed6be2ff366ef67ae2725d7d6"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-project-message/zipball/656efa00f296415ed6be2ff366ef67ae2725d7d6",
@@ -733,16 +738,16 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ],
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-project-message.git",
-                "reference": "656efa00f296415ed6be2ff366ef67ae2725d7d6"
-            }
+            ]
         },
         {
             "name": "drupal/core-recipe-unpack",
             "version": "11.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-recipe-unpack.git",
+                "reference": "fbdb482eb5e9d785e5840b3dbdfbcffd5af0e3e3"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-recipe-unpack/zipball/fbdb482eb5e9d785e5840b3dbdfbcffd5af0e3e3",
@@ -772,16 +777,16 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ],
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-recipe-unpack.git",
-                "reference": "fbdb482eb5e9d785e5840b3dbdfbcffd5af0e3e3"
-            }
+            ]
         },
         {
             "name": "drupal/core-recommended",
             "version": "11.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-recommended.git",
+                "reference": "53d63022e07ded81964d295c50ffd76279869b07"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-recommended/zipball/53d63022e07ded81964d295c50ffd76279869b07",
@@ -853,12 +858,7 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "53d63022e07ded81964d295c50ffd76279869b07"
-            }
+            "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core."
         },
         {
             "name": "egulias/email-validator",
@@ -2214,6 +2214,71 @@
                 }
             ],
             "time": "2025-02-07T04:55:46+00:00"
+        },
+        {
+            "name": "spyglasses/drupal",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestra-code/spyglasses-drupal.git",
+                "reference": "346cf5f9849539edb73678f18e99a5758cff861e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestra-code/spyglasses-drupal/zipball/346cf5f9849539edb73678f18e99a5758cff861e",
+                "reference": "346cf5f9849539edb73678f18e99a5758cff861e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1725062400",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\spyglasses\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Orchestra AI, Inc.",
+                    "homepage": "https://www.spyglasses.io",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Spyglasses AI Traffic Analytics for Drupal - Detect, block and log your website's AI traffic using Drupal's middleware API.",
+            "homepage": "https://www.spyglasses.io",
+            "keywords": [
+                "ChatGpt",
+                "ai",
+                "analytics",
+                "bot",
+                "claude",
+                "crawler",
+                "detection",
+                "drupal",
+                "middleware",
+                "perplexity"
+            ],
+            "support": {
+                "docs": "https://www.spyglasses.io/docs/platforms/drupal",
+                "issues": "https://github.com/orchestra-code/spyglasses-drupal/issues",
+                "source": "https://github.com/orchestra-code/spyglasses-drupal"
+            },
+            "time": "2025-09-15T17:40:25+00:00"
         },
         {
             "name": "symfony/console",
@@ -4871,13 +4936,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "platform-overrides": {
-        "php": "8.3.0"
-    },
+    "platform": {},
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }

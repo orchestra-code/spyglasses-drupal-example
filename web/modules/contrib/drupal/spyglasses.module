@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * Spyglasses module for AI traffic analytics.
+ *
+ * Provides middleware-based detection and logging of AI bot traffic.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function spyglasses_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.spyglasses':
+      return '<p>' . t('Spyglasses provides AI traffic analytics by detecting and logging bot traffic from AI assistants and crawlers. Configure your API key and settings at <a href="@config">Configuration > Web Services > Spyglasses</a>.', ['@config' => '/admin/config/services/spyglasses']) . '</p>';
+  }
+}
+
+/**
+ * Implements hook_requirements().
+ */
+function spyglasses_requirements($phase) {
+  $requirements = [];
+
+  if ($phase == 'runtime') {
+    $config = \Drupal::config('spyglasses.settings');
+    $api_key = $config->get('api_key');
+
+    $requirements['spyglasses_api_key'] = [
+      'title' => t('Spyglasses API Key'),
+      'value' => $api_key ? t('Configured') : t('Not configured'),
+      'severity' => $api_key ? REQUIREMENT_OK : REQUIREMENT_WARNING,
+      'description' => $api_key ? 
+        t('Spyglasses API key is configured and ready for use.') : 
+        t('Spyglasses API key is not configured. Visit the <a href="@config">configuration page</a> to set up your API key.', ['@config' => '/admin/config/services/spyglasses']),
+    ];
+  }
+
+  return $requirements;
+}
+
+/**
+ * Implements hook_cron().
+ */
+function spyglasses_cron() {
+  $pattern_sync = \Drupal::service('spyglasses.pattern_sync');
+  $pattern_sync->syncIfNeeded();
+}

@@ -1,0 +1,7 @@
+# Add this to your custom module's services.yml file
+services:
+  your_module.spyglasses_event_subscriber:
+    class: Drupal\your_module\EventSubscriber\SpyglassesEventSubscriber
+    arguments: ['@config.factory', '@logger.factory', '@cache.default', '@http_client']
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,6 @@
+spyglasses.settings:
+  title: 'Spyglasses'
+  description: 'Configure AI traffic analytics and bot detection settings.'
+  route_name: spyglasses.settings
+  parent: system.admin_config_services
+  weight: 10

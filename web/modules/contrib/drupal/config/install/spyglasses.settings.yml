@@ -1,0 +1,7 @@
+api_key: ''
+debug_mode: false
+auto_sync: true
+collector_endpoint: 'https://www.spyglasses.io/api/collect'
+patterns_endpoint: 'https://www.spyglasses.io/api/patterns'
+cache_ttl: 86400
+last_pattern_sync: 0

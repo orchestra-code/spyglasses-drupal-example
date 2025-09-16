@@ -1,0 +1,89 @@
+# flyctl launch added from vendor/pear/archive_tar/.gitignore
+# composer related
+vendor/pear/archive_tar/**/composer.lock
+vendor/pear/archive_tar/**/composer.phar
+vendor/pear/archive_tar/**/vendor
+# IDE
+vendor/pear/archive_tar/**/.idea
+# eclipse
+vendor/pear/archive_tar/**/.buildpath
+vendor/pear/archive_tar/**/.project
+vendor/pear/archive_tar/**/.settings
+# pear
+vendor/pear/archive_tar/**/.tarballs
+vendor/pear/archive_tar/**/*.tgz
+# phpunit
+vendor/pear/archive_tar/**/build
+
+# flyctl launch added from vendor/pear/console_getopt/.gitignore
+# composer related
+vendor/pear/console_getopt/**/composer.lock
+vendor/pear/console_getopt/**/composer.phar
+vendor/pear/console_getopt/**/vendor
+vendor/pear/console_getopt/**/README.html
+vendor/pear/console_getopt/**/dist
+
+# flyctl launch added from vendor/psr/container/.gitignore
+vendor/psr/container/**/composer.lock
+vendor/psr/container/**/composer.phar
+vendor/psr/container/vendor
+
+# flyctl launch added from vendor/psr/event-dispatcher/.gitignore
+vendor/psr/event-dispatcher/vendor
+vendor/psr/event-dispatcher/**/composer.lock
+
+# flyctl launch added from web/core/.gitignore
+# Ignore node_modules folder created when installing core's JavaScript
+# dependencies.
+web/core/**/node_modules
+web/core/**/yarn-error.log
+
+# Ignore yarn files
+# @see https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+web/core/**/.yarn/*
+
+# Ignore overrides of core's phpcs.xml.dist and phpunit.xml.dist.
+web/core/**/phpcs.xml
+web/core/**/phpunit.xml
+
+# Ignore package-lock.json that is automatically created when adding
+# dependencies by users of NPMv5.
+web/core/**/package-lock.json
+
+# Ignore test reports
+web/core/**/reports
+
+# Ignore local Nightwatch settings
+web/core/**/nightwatch.settings.json
+
+# Ignore dotenv
+web/core/**/.env
+
+# Ignore CSpell cache
+web/core/**/.cspellcache
+
+# Ignore phpstan cache
+web/core/**/phpstan-tmp
+
+# Ignore eslint cache
+web/core/**/.eslintcache
+
+# Ignore stylelint cache
+web/core/**/.stylelint-cache
+
+# flyctl launch added from web/core/modules/package_manager/tests/fixtures/fake_site/.gitignore
+# This file should never be staged.
+
+# flyctl launch added from web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/drupal-composer-drupal-project/.gitignore
+web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/drupal-composer-drupal-project/**/composer.lock
+web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/drupal-composer-drupal-project/**/vendor
+
+# flyctl launch added from web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/drupal-composer-drupal-project/docroot/.gitignore
+web/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/drupal-composer-drupal-project/docroot/build
+
+# flyctl launch added from web/core/tests/PHPStan/.gitignore
+web/core/tests/PHPStan/**/composer.lock
+web/core/tests/PHPStan/**/coverage.cobertura.xml
+web/core/tests/PHPStan/**/junit.xml
+web/core/tests/PHPStan/**/vendor
+fly.toml

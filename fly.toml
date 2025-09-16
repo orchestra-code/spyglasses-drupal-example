@@ -1,27 +1,31 @@
-app = "spyglasses-drupal-example"
-primary_region = "iad"
+# fly.toml app configuration file generated for spyglasses-drupal-example on 2025-09-15T17:13:55-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'spyglasses-drupal-example'
+primary_region = 'iad'
 
 [build]
-  dockerfile = "Dockerfile"
+  dockerfile = 'Dockerfile'
 
-[mounts]
-  source = "data"
-  destination = "/data"
+[[mounts]]
+  source = 'data'
+  destination = '/data'
 
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
 
-  [http_service.concurrency]
-    type = "requests"
-    soft_limit = 20
-    hard_limit = 25
+[http_service.concurrency]
+  type = 'requests'
+  hard_limit = 25
+  soft_limit = 20
 
-  [[http_service.checks]]
-    interval = "15s"
-    timeout = "2s"
-    method = "GET"
-    path = "/core/misc/drupal.js"
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1

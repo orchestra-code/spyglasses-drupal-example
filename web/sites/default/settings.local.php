@@ -159,9 +159,5 @@ $settings['file_public_path'] = 'sites/default/files';
 $settings['file_private_path'] = '/data/private';
 $settings['config_sync_directory'] = '/data/config/sync';
 
-// Use a secret from Fly (we'll set it as a secret next)
-$settings['hash_salt'] = getenv('DRUPAL_HASH_SALT') ?: 'dev-salt';
-
-// In test/demo, you can relax this, but ideally specify your hostnames:
-$settings['trusted_host_patterns'] = ['spyglasses-drupal-example.fly.dev', 'drupal.greenvoyagecanoes.com', 'localhost'];
+// Database and file configurations for local/container environment
 

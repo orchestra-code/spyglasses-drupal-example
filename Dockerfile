@@ -34,6 +34,8 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction
 # Copy application files
 COPY . .
 
+RUN chmod 444 web/sites/default/settings.php
+
 # Set up data directories and permissions
 RUN mkdir -p /data/files /data/private /data/config/sync \
     && chown -R www-data:www-data /data \

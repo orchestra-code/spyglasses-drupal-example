@@ -2305,7 +2305,7 @@
             "install-path": "../sebastian/diff"
         },
         {
-            "name": "spyglasses/drupal",
+            "name": "spyglasses/spyglasses",
             "version": "v1.0.0",
             "version_normalized": "1.0.0.0",
             "source": {
@@ -2370,7 +2370,7 @@
                 "issues": "https://github.com/orchestra-code/spyglasses-drupal/issues",
                 "source": "https://github.com/orchestra-code/spyglasses-drupal"
             },
-            "install-path": "../../web/modules/contrib/drupal"
+            "install-path": "../../web/modules/contrib/spyglasses"
         },
         {
             "name": "symfony/console",

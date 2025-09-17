@@ -301,7 +301,7 @@ class ComposerStaticInit9d559ab354f63dc7e9a3fc1a03ad7d46
         ),
         'Drupal\\spyglasses\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/web/modules/contrib/drupal/src',
+            0 => __DIR__ . '/../..' . '/web/modules/contrib/spyglasses/src',
         ),
         'Drupal\\Core\\' => 
         array (

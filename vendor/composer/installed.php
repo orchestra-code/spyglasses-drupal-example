@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '6764728a03165fb41376b01782e3ef40c988c870',
+        'reference' => 'aaeaec587a5373585f15fe6ce429b2aa6ff960c7',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -256,7 +256,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '6764728a03165fb41376b01782e3ef40c988c870',
+            'reference' => 'aaeaec587a5373585f15fe6ce429b2aa6ff960c7',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -493,12 +493,12 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'spyglasses/drupal' => array(
+        'spyglasses/spyglasses' => array(
             'pretty_version' => 'v1.0.0',
             'version' => '1.0.0.0',
             'reference' => '346cf5f9849539edb73678f18e99a5758cff861e',
             'type' => 'drupal-module',
-            'install_path' => __DIR__ . '/../../web/modules/contrib/drupal',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/spyglasses',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

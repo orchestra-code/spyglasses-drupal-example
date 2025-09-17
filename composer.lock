@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f97828f384a4a4e554485015d6fc8ddf",
+    "content-hash": "adfd658a1b576b2153f709bcd29f7223",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2216,7 +2216,7 @@
             "time": "2025-02-07T04:55:46+00:00"
         },
         {
-            "name": "spyglasses/drupal",
+            "name": "spyglasses/spyglasses",
             "version": "v1.0.0",
             "source": {
                 "type": "git",

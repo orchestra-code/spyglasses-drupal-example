@@ -2217,19 +2217,20 @@
         },
         {
             "name": "spyglasses/spyglasses",
-            "version": "v1.0.0",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestra-code/spyglasses-drupal.git",
-                "reference": "346cf5f9849539edb73678f18e99a5758cff861e"
+                "reference": "1aebae79c69732f7612daec37902e722094b9175"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestra-code/spyglasses-drupal/zipball/346cf5f9849539edb73678f18e99a5758cff861e",
-                "reference": "346cf5f9849539edb73678f18e99a5758cff861e",
+                "url": "https://api.github.com/repos/orchestra-code/spyglasses-drupal/zipball/1aebae79c69732f7612daec37902e722094b9175",
+                "reference": "1aebae79c69732f7612daec37902e722094b9175",
                 "shasum": ""
             },
             "require": {
+                "composer/installers": "^1.0 || ^2.0",
                 "php": ">=7.4"
             },
             "type": "drupal-module",
@@ -2241,7 +2242,8 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                }
+                },
+                "installer-name": "spyglasses"
             },
             "autoload": {
                 "psr-4": {
@@ -2278,7 +2280,7 @@
                 "issues": "https://github.com/orchestra-code/spyglasses-drupal/issues",
                 "source": "https://github.com/orchestra-code/spyglasses-drupal"
             },
-            "time": "2025-09-15T17:40:25+00:00"
+            "time": "2025-09-17T12:00:56+00:00"
         },
         {
             "name": "symfony/console",

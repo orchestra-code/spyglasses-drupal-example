@@ -1,5 +1,5 @@
 {
-  "name": "spyglasses/drupal",
+  "name": "spyglasses/spyglasses",
   "description": "Spyglasses AI Traffic Analytics for Drupal - Detect, block and log your website's AI traffic using Drupal's middleware API.",
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
@@ -17,7 +17,8 @@
     "docs": "https://www.spyglasses.io/docs/platforms/drupal"
   },
   "require": {
-    "php": ">=7.4"
+    "php": ">=7.4",
+    "composer/installers": "^1.0 || ^2.0"
   },
   "autoload": {
     "psr-4": {
@@ -32,7 +33,8 @@
         "status": "covered",
         "message": "Covered by Drupal's security advisory policy"
       }
-    }
+    },
+    "installer-name": "spyglasses"
   },
   "keywords": [
     "drupal",
